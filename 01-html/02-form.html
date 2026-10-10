@@ -9,6 +9,55 @@
   <body>
     <main>
       <!-- Add your code here -->
+       <h1>Roth IRA Calculator</h1>
+      
+      <form action="#" method="POST">
+        <p>
+          <label for="balance">Balance ($)</label><br>
+          <input type="text" id="balance" name="balance">
+        </p>
+
+        <p>
+          <label for="annual-contribution">Annual contribution (4)</label><br>
+          <input type="text" id="annual-contribution" name="annual_contribution">
+        </p>
+
+        <p>
+          <label>Maximize contributions?</label><br>
+          <input type="radio" id="max-yes" name="maximize" value="yes">
+          <label for="max-yes">Yes</label>
+          <input type="radio" id="max-no" name="maximize" value="no">
+          <label for="max-no">No</label>
+        </p>
+
+        <p>
+          <label for="expected-return">Expected rate of return (5)</label><br>
+          <input type="number" id="expected-return" name="expected_return">
+        </p>
+
+        <p>
+          <label for="current-age">Current age</label><br>
+          <input type="number" id="current-age" name="current_age">
+        </p>
+
+        <p>
+          <label for="retirement-age">Retirement age</label><br>
+          <input type="number" id="retirement-age" name="retirement_age">
+        </p>
+
+        <p>
+          <label for="tax-rate">Marginal tax rate (%)</label><br>
+          <input type="number" id="tax-rate" name="tax_rate">
+        </p>
+
+        <p>
+          <!-- kept the type as button so the site wont crash after pressing calculate, otherwise id change it to submit-->
+          <button type="button">Calculate</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+
+      <p>This exercise is a simplified version of the Roth IRA Calculator at <a href="https://www.calculator.net/roth-ira-calculator.html">Calculator.net</a></p>
     </main>
   </body>
 </html>

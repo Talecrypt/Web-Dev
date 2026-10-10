@@ -6,27 +6,50 @@
     <title>Exercise 01 - Audit</title>
   </head>
   <body>
-    <form>
-      Name:<br />
-      <input type="text" name="name" /><br /><br />
-      Address:<br />
-      <input type="text" name="address" />
-      <br /><br />
-      City:<br />
-      <input type="text" name="city" />
-      <br /><br />
-      Zip Code:<br />
-      <input type="text" name="zip" />
-      <br /><br />
-      Credit Card Type:<br />
-      <input type="radio" name="card" value="visa" /> Visa<br />
-      <input type="radio" name="card" value="mastercard" /> MasterCard<br />
-      <input type="radio" name="card" value="amex" /> American Express<br /><br />
-      Credit Card Number:<br />
-      <input type="text" name="cc_number" /><br /><br />
-      CVC:<br />
-      <input type="text" name="cvv" /><br /><br />
-      <input type="button" value="Submit" />
-    </form>
+    <!-- AUDIT FIX: Added a <main> tag to resolve the "No page regions" alert. -->
+    <main>
+      <!-- AUDIT FIX: Added an <h1> tag to resolve the "No heading structure" alert. -->
+      <h1>Payment Information Form</h1>
+      <form>
+        <!-- AUDIT FIX: Added <label> tags and paired them with the corresponding input 'id' using the 'for' attribute. -->
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+        
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" />
+        <br /><br />
+        
+        <label for="city">City:</label><br />
+        <input type="text" id="city" name="city" />
+        <br /><br />
+        
+        <label for="zip">Zip Code:</label><br />
+        <input type="text" id="zip" name="zip" />
+        <br /><br />
+        
+        <!-- AUDIT FIX: Wrapped the related radio buttons inside a <fieldset> and provided a <legend>. -->
+        <fieldset>
+          <legend>Credit Card Type:</legend>
+          <input type="radio" id="visa" name="card" value="visa" /> 
+          <label for="visa">Visa</label><br />
+            
+          <input type="radio" id="mastercard" name="card" value="mastercard" /> 
+          <label for="mastercard">MasterCard</label><br />
+            
+          <input type="radio" id="amex" name="card" value="amex" /> 
+          <label for="amex">American Express</label>
+        </fieldset> 
+        <br /><br />
+        
+        <label for="cc-number">Credit Card Number:</label><br />
+        <input type="text" id="cc-number" name="cc_number" /><br /><br />
+        
+        <label for="cvv">CVC:</label><br />
+        <input type="text" id="cvv" name="cvv" /><br /><br />
+        
+        <!-- AUDIT FIX: Upgraded the input button to a semantic <button> element with type="submit". -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
