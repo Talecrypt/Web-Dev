@@ -1,1 +1,272 @@
 /* Add your CSS code here  */
+
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--dark-slate-infinity);
+  padding: 1rem;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--ice-blue-juvie);
+  font-family: 'Cinzel', serif;
+  font-size: 1.0rem;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+  border-radius: 5px;
+}
+
+
+/* Main Content Styles */
+.books-container {
+  max-width: 1024px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--dark-slate-infinity);
+}
+
+.main-heading {
+  font-family: 'Cinzel', serif;
+  color: var(--gothic-gray-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* List Styles */
+.nested-list {
+  font-size: 1.0rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.nested-list ul {
+  list-style-type: square;
+  margin-top: 0.5rem;
+  color: var(--gothic-gray-blue);
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+  display: flex;
+  justify-content: Left;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.book-cover {
+  width: 30%;
+  height: AUTO;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(31, 42, 51, 0.4);
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: var(--dark-slate-infinity);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+table th, 
+table td {
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  vertical-align: middle;
+  color: #333;
+}
+
+table thead,
+table tfoot,
+table th {
+  background-color: #f4f4f4; 
+  font-weight: bold;
+}
+
+/* Ensure the total number (147) in the footer is centered */
+table tfoot th {
+  text-align: center;
+}
+
+/*form.html*/
+:root {
+  --midnight-blue: #161678;
+}
+
+/* Page Background */
+.form-page {
+  background-color: var(--midnight-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* White Card Container */
+.ira-calculator {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+/* Main Title */
+.ira-calculator h2 {
+  color: var(--midnight-blue);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  border-bottom: none;
+  text-transform: none;
+}
+
+/* Flexbox rows for side-by-side labels and inputs */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  font-size: 0.95rem;
+  color: #333;
+  width: 48%;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"] {
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Radio Button Group */
+.form-radio-group {
+  margin-bottom: 1.5rem;
+}
+
+.radio-label {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.radio-options {
+  display: right;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.radio-options label {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Buttons side-by-side */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.0rem;
+  margin-top: 2rem;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-calc {
+  background-color: var(--midnight-blue);
+  color: #ffffff;
+}
+
+.btn-reset {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.button-group button:hover {
+  opacity: 0.9;
+}
+
+/* Footer Disclaimer */
+.disclaimer {
+  font-size: 0.8rem;
+  color: #000;
+  margin-top: 2.5rem;
+  line-height: 1.4;
+}
+
+.disclaimer a {
+  color: var(--midnight-blue);
+  text-decoration: underline;
+}

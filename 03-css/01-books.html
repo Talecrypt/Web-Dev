@@ -6,10 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Exercise 01 - Books</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Start with the code from the HTML folder.
       - Make sure to fix any issues in your HTML code.
       - Add classes to style the elements on the page. -->
+      <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#main-series">ASOIAF Books</a></li>
+        <li><a href="#books-covers">First Edition Covers</a></li>
+        <li><a href="#characters">Table of POV Characters</a></li>
+      </ul>
+    </nav>
+    <main class="books-container">
+      <h1 class="main-heading">A SONG OF ICE AND FIRE - GEORGE R.R. MARTIN</h1>
+      <h2 class="sub-heading" id="main-series">ASOIAF Books</h2>
+      <ul class="nested-list">
+        <li>A Song of Ice and Fire Series:
+          <ol>
+            <li>A Game of Thrones (1996)</li>
+            <li>A Clash of Kings (1998)</li>
+            <li>A Storm of Swords (2000)</li>
+            <li>A Feast for Crows (2005)</li>
+            <li>A Dance with Dragons (2011)</li>
+          </ol>
+        </li>
+        <li>A Knight of the Seven Kingdoms (2015)</li>
+          <ol>
+            <li>The Hedge Knight (1998)</li>
+            <li>The Sworn Sword (2003)</li>
+            <li>The Mystery Knight (2010)</li>
+          </ol>
+        </li>
+        <li> Fire & Blood (2018)</li>
+      </ul>
+      <h2 class="first-edition" id="books-covers">First Edition Covers</h2>
+      <div class="image-gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg" alt="A Game of Thrones cover" class="book-cover">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg" alt="A Clash of Kings cover" class="book-cover">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg" alt="A Storm of Swords cover" class="book-cover">
+      </div>
+      <h2 id="characters">POV Character with the Most Chapters in Each Book</h2>
+    <table class="pov-table">
+          <thead>
+            <tr>
+              <th rowspan="2">POV<br>Character</th>
+              <th colspan="5">Books</th>
+              <th rowspan="2">Total<br>Chapters</th>
+            </tr>
+            <tr>
+              <th>A Game of<br>Thrones</th>
+              <th>A Clash of<br>Kings</th>
+              <th>A Storm of<br>Swords</th>
+              <th>A Feast for<br>Crows</th>
+              <th>A Dance with<br>Dragons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Eddard Stark</td>
+              <td>15</td>
+              <td colspan="4">n/a</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Tyrion<br>Lannister</td>
+              <td>9</td>
+              <td>15</td>
+              <td>11</td>
+              <td>n/a</td>
+              <td>12</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>Arya Stark</td>
+              <td>5</td>
+              <td>10</td>
+              <td>13</td>
+              <td>3</td>
+              <td>2</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>Cersei<br>Lannister</td>
+              <td colspan="3">n/a</td>
+              <td>10</td>
+              <td>n/a</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Jon Snow</td>
+              <td>9</td>
+              <td>8</td>
+              <td>12</td>
+              <td>n/a</td>
+              <td>13</td>
+              <td>42</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="6">Total POV Chapters (Displayed)</th>
+              <th>147</th>
+            </tr>
+          </tfoot>
+        </table>
+    </main>
   </body>
 </html>
